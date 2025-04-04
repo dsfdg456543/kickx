@@ -1,0 +1,286 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: Impact, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 1rem;
+  border-bottom: 2px solid white;
+}
+
+.logo {
+  color: white;
+  font-size: 2rem;
+  border: 2px solid black;
+  padding: 0.5rem 1rem;
+}
+
+.profile-menu {
+  position: absolute;
+  right: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.profile-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.dropdown {
+  display: none;
+  flex-direction: column;
+  background-color: #333;
+  border-radius: 5px;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  min-width: 100px;
+  text-align: left;
+}
+
+.dropdown a {
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {
+  background-color: #555;
+}
+
+.profile-circle:hover + .dropdown,
+.dropdown:hover {
+  display: flex;
+}
+
+.horizontal-strip {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 0;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+}
+
+.horizontal-strip a {
+  color: white;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+  transition: color 0.3s;
+}
+
+.horizontal-strip a:hover {
+  color: gray;
+  text-decoration: underline;
+}
+
+.hero-section {
+  position: relative;
+  text-align: center;
+  padding: 5rem 1rem;
+  color: rgb(0, 0, 0);
+
+  overflow: hidden;
+}
+
+#background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.hero-section h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.hero-button {
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: rgb(255, 255, 255);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  text-decoration: none;
+}
+
+.hero-button:hover {
+  background-color: gray;
+  color: white;
+}
+
+.main-section {
+  padding: 20px;
+  text-align: center;
+}
+
+.shoe-images {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.shoe-image {
+  width: 22%;
+  border-radius: 10px;
+}
+
+.groove-text {
+  font-family: "Arial", sans-serif;
+  letter-spacing: 2px;
+  margin-top: 30px;
+  margin-left: 590px;
+}
+
+.image-text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.image-item {
+  width: 45%;
+}
+
+.vertical-text {
+  writing-mode: vertical;
+  font-family: "Arial", sans-serif;
+  letter-spacing: 5px;
+  text-align: center;
+  font-size: 50px;
+}
+
+.button-container a {
+  text-decoration: none;
+}
+
+.button-container .button {
+  padding: 10px 20px;
+  border: 2px solid black;
+  background-color: black;
+  color: white;
+  font-family: "Arial", sans-serif;
+  letter-spacing: 2px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button-container .button:hover {
+  background-color: white;
+  color: black;
+}
+
+footer {
+  background-color: lightgrey;
+  padding: 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-logo {
+  font-family: Impact, sans-serif;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.footer-sections {
+  display: flex;
+  gap: 50px;
+}
+
+.footer-section p {
+  font-family: Arial, sans-serif;
+  color: black;
+  font-weight: bold;
+}
+
+.footer-section p:first-child {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+.footer-section p:not(:first-child) {
+  margin: 5px 0;
+}
+
+.social-icons-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-icon {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+}
+
+footer {
+  background-color: lightgrey;
+  padding: 20px;
+  position: relative;
+}
+
+.footer-icons-container {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  gap: 15px;
+}
+
+.footer-icon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.footer-icon:hover {
+  transform: scale(1.1);
+}

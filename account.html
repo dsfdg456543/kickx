@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Account Page</title>
+    <link rel="stylesheet" href="account.css" />
+  </head>
+  <body>
+  
+    <nav class="navbar">
+      <div class="profile-menu">
+        <div class="profile-circle">
+          <img
+            src="https://img.freepik.com/premium-vector/sneaker-cartoon-illustration-vector_484148-146.jpg"
+            alt="Profile Picture"
+            />
+            </div>
+        <div class="profile-circle"></div>
+        <div class="dropdown">
+          <a href="account.html">Account</a>
+          <a href="payment.html">Payment</a>
+          <a href="cart.html">Cart</a>
+          <a href="index.html">Log out</a>
+        </div>
+      </div>
+      <h1 class="logo">KICKX</h1>
+    </nav>
+
+   
+    <div class="horizontal-strip">
+      <a href="home.html">HOME</a>
+      <a href="sneakers.html">SNEAKERS</a>
+      <a href="shop.html">SHOP</a>
+      <a href="aboutus.html">ABOUT US</a>
+    </div>
+
+ 
+    <div class="content">
+      
+    </div>
+    <div class="account-container">
+      <h2>Your Account Details</h2>
+      <label><strong>Name:</strong></label>
+      <input
+        type="text"
+        id="accountName"
+        placeholder="Enter your name"
+        required
+      />
+
+      <label><strong>Email:</strong></label>
+      <input
+        type="email"
+        id="accountEmail"
+        placeholder="Enter your email"
+        required
+      />
+
+      <label><strong>Password:</strong></label>
+      <input
+        type="password"
+        id="accountPassword"
+        placeholder="Enter your password"
+        required
+      />
+
+      <label><strong>Phone Number:</strong></label>
+      <input
+        type="text"
+        id="accountPhone"
+        placeholder="Enter your phone number"
+        required
+      />
+
+      <label><strong>Address:</strong></label>
+      <input
+        type="text"
+        id="accountAddress"
+        placeholder="Enter your address"
+        required
+      />
+
+      <button onclick="updateAccount()">Update</button>
+    </div>
+    <script src="account.js"></script>
+    </div>
+  </body>
+</html>

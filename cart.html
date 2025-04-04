@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart Page</title>
+    <link rel="stylesheet" href="cart.css" />
+  </head>
+  <body>
+
+    <nav class="navbar">
+      <div class="profile-menu">
+        <div class="profile-circle">
+          <img
+            src="https://img.freepik.com/premium-vector/sneaker-cartoon-illustration-vector_484148-146.jpg"
+            alt="Profile Picture"
+          />
+        </div>
+
+        <div class="dropdown">
+          <a href="account.html">Account</a>
+          <a href="payment.html">Payment</a>
+          <a href="cart.html">Cart</a>
+          <a href="index.html">Log out</a>
+        </div>
+      </div>
+      <h1 class="logo">KICKX</h1>
+    </nav>
+
+
+    <div class="horizontal-strip">
+      <a href="home.html">HOME</a>
+      <a href="sneakers.html">SNEAKERS</a>
+      <a href="shop.html">SHOP</a>
+      <a href="aboutus.html">ABOUT US</a>
+    </div>
+
+    <div style="height: 20px;"></div>
+
+
+    <div class="cart-container">
+      <div class="cart-items">
+        <h2>Your Cart</h2>
+        <div id="cart-items-list"></div>
+      </div>
+
+
+      <div class="checkout-box">
+        <h2>Checkout</h2>
+        <form id="checkout-form">
+          <div class="form-group">
+            <label for="first-name">First Name</label>
+            <input
+              type="text"
+              id="first-name"
+              placeholder="First Name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Email Address"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="phone-number">Phone Number</label>
+            <input
+              type="tel"
+              id="phone-number"
+              placeholder="Phone Number"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="address">Address</label>
+            <textarea id="address" placeholder="Address" required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="street">Street</label>
+            <input type="text" id="street" placeholder="Street" required />
+          </div>
+          <div class="form-group">
+            <label for="near-landmark">Near Landmark</label>
+            <input
+              type="text"
+              id="near-landmark"
+              placeholder="Near Landmark"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="pincode">Pincode</label>
+            <input type="text" id="pincode" placeholder="Pincode" required />
+          </div>
+          <div class="form-group">
+            <label for="city">City</label>
+            <input type="text" id="city" placeholder="City" required />
+          </div>
+
+          <div id="total-cost">
+            <p id="price"></p>
+            <p>Shipping: RS 100</p>
+            <p>Total: RS <span id="total-price">0</span></p>
+          </div>
+
+         
+          <div id="payment-methods">
+            <button type="button" id="debit-card" onclick="goToCheckout()">
+              Debit Card
+            </button>
+            <button type="button" id="credit-card" onclick="goToCheckout()">
+              Credit Card
+            </button>
+            <button type="button" id="upi" onclick="goToCheckout()">UPI</button>
+            <button type="button" id="net-banking" onclick="goToCheckout()">
+              Net Banking
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="cart.js"></script>
+
+
+<div style="height: 100px;"></div>
+
+
+<footer>
+    <div class="footer-container">
+      <h1 class="footer-logo">KICKX</h1>
+
+      <div class="footer-sections">
+        <div class="footer-section">
+          <p>ABOUT US</p>
+          <p>KICKX</p>
+          <p>Careers</p>
+          <p>Vision</p>
+        </div>
+
+        <div class="footer-section">
+          <p>CONTACT US</p>
+          <p>Mail: kickx2024@gmail.com</p>
+          <p>Call: +91 7936190638</p>
+        </div>
+
+        <div class="footer-section">
+          <p>HELP</p>
+          <p>Account</p>
+          <p>Payment</p>
+          <p>Cancellation, Return and Refunds</p>
+        </div>
+
+        <div class="footer-section">
+          <p>SOCIALS</p>
+          <a href="https://www.facebook.com" target="_blank">
+            <img
+              src="https://store-images.s-microsoft.com/image/apps.37935.9007199266245907.b029bd80-381a-4869-854f-bac6f359c5c9.91f8693c-c75b-4050-a796-63e1314d18c9?h=210"
+              alt="Facebook"
+              class="social-icon"
+            />
+          </a>
+          <a href="https://www.instagram.com" target="_blank">
+            <img
+              src="https://img.freepik.com/free-vector/instagram-logo_1199-122.jpg?semt=ais_hybrid"
+              alt="Instagram"
+              class="social-icon"
+            />
+          </a>
+          <a href="https://x.com" target="_blank">
+            <img
+              src="https://pbs.twimg.com/profile_images/1683500894644498435/bwnq-s8f_400x400.jpg"
+              alt="X"
+              class="social-icon"
+            />
+          </a>
+          <a href="https://www.youtube.com" target="_blank">
+            <img
+              src="https://goodly.co.in/wp-content/uploads/2023/10/youtube-logo-png-46016-1.png"
+              alt="YouTube"
+              class="social-icon"
+            />
+          </a>
+        </div>
+      </div>
+
+ 
+      <div class="footer-icons-container">
+        <img
+          src="https://d28wu8o6itv89t.cloudfront.net/images/Visadebitcardpng-1599584312349.png"
+          alt="Icon 1"
+          class="footer-icon"
+        />
+        <img
+          src="https://www.monotype.com/sites/default/files/styles/width_810/public/2019-10/mt_images-article_mastercardblack_body_1540x1032.jpg?itok=LpzNyeA_"
+          alt="Icon 2"
+          class="footer-icon"
+        />
+        <img
+          src="https://cdn.icon-icons.com/icons2/2699/PNG/512/upi_logo_icon_169316.png"
+          alt="Icon 3"
+          class="footer-icon"
+        />
+        <img
+          src="https://icones.pro/wp-content/uploads/2021/10/symbole-bancaire-bleue.png"
+          alt="Icon 4"
+          class="footer-icon"
+        />
+      </div>
+
+      <hr style="border: 1px solid black; width: 100%; margin: 5px;">
+
+      <p style="color: black;">This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.
+
+        © 2024 KICKX Inc.</p>
+  </footer>
+
+  </body>
+</html>

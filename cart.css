@@ -1,0 +1,298 @@
+body {
+  background-color: black;
+  font-family: Impact, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 1rem;
+  border-bottom: 2px solid white;
+}
+
+.logo {
+  color: white;
+  font-size: 2rem;
+  border: 2px solid black;
+  padding: 0.5rem 1rem;
+}
+
+.profile-menu {
+  position: absolute;
+  right: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.profile-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.dropdown {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s;
+  flex-direction: column;
+  background-color: #333;
+  border-radius: 5px;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  min-width: 100px;
+  text-align: left;
+}
+
+.dropdown a {
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {
+  background-color: #555;
+}
+
+.profile-circle:hover ~ .dropdown,
+.dropdown:hover {
+  visibility: visible;
+  opacity: 1;
+}
+
+.horizontal-strip {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 0;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+}
+
+.horizontal-strip a {
+  color: white;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+  transition: color 0.3s;
+}
+
+.horizontal-strip a:hover {
+  color: gray;
+  text-decoration: underline;
+}
+
+.cart-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 1%;
+}
+
+.cart-items,
+.checkout-box {
+  width: 48%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart-items h2,
+.checkout-box h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+#cart-items-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.m-info > div {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #eee;
+  padding: 15px;
+  border-radius: 12px;
+}
+
+.cart-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  border-radius: 5px;
+}
+
+.cart-item-details {
+  flex-grow: 1;
+  margin-left: 20px;
+}
+
+.cart-item-details span {
+  display: block;
+}
+
+.delete-button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.delete-button:hover {
+  background-color: darkred;
+}
+
+.checkout-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkout-box input,
+#address {
+  width: 98%;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+#total-cost {
+  margin-top: 20px;
+}
+
+#payment-methods button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin: 10px 0;
+  cursor: pointer;
+  font-size: 1.1em;
+  width: 100%;
+}
+
+#payment-methods button:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-logo {
+  font-family: Impact, sans-serif;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+.footer-sections {
+  display: flex;
+  gap: 50px;
+}
+
+.footer-section p {
+  font-family: Arial, sans-serif;
+  color: black;
+  font-weight: bold;
+}
+
+.footer-section p:first-child {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+.footer-section p:not(:first-child) {
+  margin: 5px 0;
+}
+
+.social-icons-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-icon {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+}
+
+footer {
+  background-color: lightgrey;
+  padding: 20px 0;
+  position: relative;
+}
+
+.footer-icons-container {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  gap: 15px;
+}
+
+.footer-icon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.footer-icon:hover {
+  transform: scale(1.1);
+}

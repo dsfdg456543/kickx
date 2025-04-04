@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Account Page</title>
+    <link rel="stylesheet" href="payment.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="profile-menu">
+        <div class="profile-circle">
+          <img
+            src="https://img.freepik.com/premium-vector/sneaker-cartoon-illustration-vector_484148-146.jpg"
+            alt="Profile Picture"
+          />
+        </div>
+        <div class="dropdown">
+          <a href="account.html">Account</a>
+          <a href="payment.html">Payment</a>
+          <a href="cart.html">Cart</a>
+          <a href="index.html">Log out</a>
+        </div>
+      </div>
+      <h1 class="logo">KICKX</h1>
+    </nav>
+
+    <div class="horizontal-strip">
+      <a href="home.html">HOME</a>
+      <a href="sneakers.html">SNEAKERS</a>
+      <a href="shop.html">SHOP</a>
+      <a href="aboutus.html">ABOUT US</a>
+    </div>
+
+    <div class="content"></div>
+
+    <div class="payment-container">
+      <h2>Your Saved Payment Options</h2>
+      <form id="payment-form">
+        <div>
+          <label for="debitcardnumber"
+            ><strong>Debit Card Number:</strong></label
+          >
+          <input
+            type="text"
+            id="debitcardnumber"
+            placeholder="Enter your Debit Card Number"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="expirydate_debit"
+            ><strong>Expiry Date (MM/YY):</strong></label
+          >
+          <input
+            type="text"
+            id="expirydate_debit"
+            placeholder="MM/YY"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="cvv_debit"><strong>CVV:</strong></label>
+          <input type="text" id="cvv_debit" placeholder="CVV" required />
+        </div>
+
+        <div>
+          <label for="creditcardnumber"
+            ><strong>Credit Card Number:</strong></label
+          >
+          <input
+            type="text"
+            id="creditcardnumber"
+            placeholder="Enter your Credit Card Number"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="expirydate_credit"
+            ><strong>Expiry Date (MM/YY):</strong></label
+          >
+          <input
+            type="text"
+            id="expirydate_credit"
+            placeholder="MM/YY"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="cvv_credit"><strong>CVV:</strong></label>
+          <input type="text" id="cvv_credit" placeholder="CVV" required />
+        </div>
+
+        <div>
+          <label for="upiid"><strong>UPI ID:</strong></label>
+          <input
+            type="text"
+            id="upiid"
+            placeholder="Enter your UPI ID"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="accountname"><strong>Account Name:</strong></label>
+          <input
+            type="text"
+            id="accountname"
+            placeholder="Enter your Account Name"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="accountnumber"><strong>Account Number:</strong></label>
+          <input
+            type="text"
+            id="accountnumber"
+            placeholder="Enter your Account Number"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="accountifsccode"
+            ><strong>Account IFSC Code:</strong></label
+          >
+          <input
+            type="text"
+            id="accountifsccode"
+            placeholder="Enter your Account IFSC Code"
+            required
+          />
+        </div>
+
+        <button type="button" onclick="savePaymentOptions()">
+          Save Payment Options
+        </button>
+      </form>
+    </div>
+
+    <script src="payment.js"></script>
+  </body>
+</html>
